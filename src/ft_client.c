@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_client.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mhaddaou <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mhaddaou <mhaddaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/19 10:59:33 by mhaddaou          #+#    #+#             */
-/*   Updated: 2022/01/19 11:11:58 by mhaddaou         ###   ########.fr       */
+/*   Updated: 2022/02/14 04:21:41 by mhaddaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,8 +68,8 @@ int	main(int argc, char *argv[])
 	i = 1;
 	if (argc != 3)
 	{
-		ft_putstr ("wrong the argument\n");
-		return (0);
+		ft_putstr_fd("wrong the argument\n", 2);
+		return (EXIT_FAILURE);
 	}
 	pid = ft_change_char_to_deci(argv[1]);
 	str_bytes = ft_conbin(argv[2], len, i);
